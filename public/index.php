@@ -76,7 +76,7 @@ $files = glob($dir . "*.txt");
             <?php foreach ($files as $file): ?>
                 <?php $name = basename($file); ?>
                 <li>
-                    <a href="?open=<?= $name ?>">📄 <?= $name ?></a>
+                    <a href="?open=<?= $name ?>"> <?= $name ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>
