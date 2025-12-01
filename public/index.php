@@ -56,12 +56,12 @@ $files = glob($dir . "*.txt");
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Лабораторна 4: Редактор файлів</title>
+    <title>Лабораторна робота 4</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Простий менеджер файлів на PHP</h1>
+<h1>Завантаження файлів PHP</h1>
 
 <?php if ($message): ?>
     <div class="message"><?= $message ?></div>
@@ -87,7 +87,7 @@ $files = glob($dir . "*.txt");
         
         <form action="index.php" method="POST">
             <label>Назва файлу:</label>
-            <input type="text" name="filename" value="<?= $currentFile ?>" placeholder="наприклад: notes" required>
+            <input type="text" name="filename" value="<?= $currentFile ?>" required>
             
             <label>Вміст:</label>
             <textarea name="content" placeholder="Введіть текст тут..."><?= htmlspecialchars($content) ?></textarea>
